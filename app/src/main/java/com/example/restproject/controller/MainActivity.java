@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.restproject.R;
 
 public class MainActivity extends AppCompatActivity {
+    //test for pushing
     private static final String EXTRA_MESSAGE = "";
     private static final String customers = "test test";
     EditText usernameEditText, passwordEditText;
