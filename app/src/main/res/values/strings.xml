@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">RestProject</string>
+    <string name="welcome">Welcome to our Resturent</string>
+    <string name="please_sign_in_to_continue">Please sign up to continue</string>
+    <string name="email">Email</string>
+    <string name="password_hint">********</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="name">Name</string>
+    <string name="number_phone">05********</string>
+    <string name="phone">Phone</string>
+    <string name="already_have_an_account">already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="visa_number">**** **** ****</string>
+    <string name="visa">Visa card</string>
+    <string name="date_of_birth">DOB</string>
+    <string name="home_page">Home Page</string>
+    <string name="rooms">Rooms</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="log_out">Log out</string>
+    <string name="go_to_home_page">Go directly to the app</string>
+    <string name="username">Username</string>
+    <string name="are_you_guest">Are you guest?</string>
+    <string name="areYouAnEmp">Are you an employee?</string>
+    <string name="yes">Yes</string>
+    <string name="log_in">Log in</string>
+    <string name="create_employee_account">Create Employee Account</string>
+    <string name="location">
+        <br>
+            Location
+        </br>
+    </string>
+</resources>
