@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
@@ -10,26 +12,22 @@
         android:layout_width="200dp"
         android:layout_height="65dp"
         android:text="MENU"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="75dp"
         android:textSize="30dp"
         android:textAlignment="center"
-        tools:ignore="MissingConstraints"
         android:drawableLeft="@drawable/ic_menu"
-        android:paddingTop="20dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginLeft="55dp"
+        android:gravity="center"/>
 
     <Button
         android:id="@+id/salads"
         android:layout_width="300dp"
         android:layout_height="65dp"
         android:text="@string/salads"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="160dp"
-        tools:ignore="MissingConstraints"
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_salad"
         android:textSize="24dp"
+        android:layout_margin="18dp"
         android:onClick="onClicksaladsBtn"
         />
 
@@ -38,12 +36,10 @@
         android:layout_width="300dp"
         android:layout_height="65dp"
         android:text="@string/hotDrinks"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="230dp"
-        tools:ignore="MissingConstraints"
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_hot_drinks"
         android:textSize="24dp"
+        android:layout_margin="18dp"
         android:onClick="onClickHotDrinksBtn"
         />
 
@@ -52,13 +48,11 @@
         android:layout_width="300dp"
         android:layout_height="65dp"
         android:text="@string/coldDrinks"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="300dp"
-        tools:ignore="MissingConstraints"
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_cold_drinks"
         android:textSize="24dp"
-        android:onClick="onClickHotDrinksBtn"
+        android:layout_margin="18dp"
+        android:onClick="onClickColdDrinksBtn"
         />
 
     <Button
@@ -72,6 +66,7 @@
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_meal"
         android:textSize="24dp"
+        android:layout_margin="18dp"
         android:onClick="onClickMealBtn"
         />
 
@@ -80,12 +75,10 @@
         android:layout_width="300dp"
         android:layout_height="65dp"
         android:text="@string/desserts"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="440dp"
-        tools:ignore="MissingConstraints"
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_dessert"
         android:textSize="24dp"
+        android:layout_margin="18dp"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

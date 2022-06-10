@@ -197,7 +197,6 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorWhite"
                 android:background="@drawable/background_btn"
-                android:onClick="onClickSignInBtn"
                  />
 
 
