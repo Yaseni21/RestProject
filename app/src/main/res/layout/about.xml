@@ -25,11 +25,11 @@
         android:layout_height="71dp"
         android:layout_marginStart="128dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="316dp"
+        android:layout_marginBottom="328dp"
         android:text="@string/about_us"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -40,7 +40,6 @@
         android:layout_marginStart="163dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="190dp"
-        android:text="@string/about_usText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
