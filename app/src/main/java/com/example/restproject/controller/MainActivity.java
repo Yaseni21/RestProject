@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
     EditText usernameEditText, passwordEditText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -27,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
 //        intent.putExtra("msg", customers);
 //        startActivity(intent);
 //    }
+
+    public void onClickSignInBtn(View view) {
+        Intent intent = new Intent(this, CategoriesActivity.class);
+//        intent.putExtra("msg", customers);
+        startActivity(intent);
+    }
 
     public void createNewClick2(View view) {
         Intent intent = new Intent(this, SignUpActivity.class);

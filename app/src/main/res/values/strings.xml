@@ -35,4 +35,9 @@
             Location
         </br>
     </string>
+    <string name="salads">Salads</string>
+    <string name="mainMeals">Main Meals</string>
+    <string name="coldDrinks">Cold Drinks</string>
+    <string name="hotDrinks">Hot Drinks</string>
+    <string name="desserts">"Desserts "</string>
 </resources>
