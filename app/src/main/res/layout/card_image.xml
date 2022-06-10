@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="500dp"
+    android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="20dp"
     android:id="@+id/card_view"
@@ -21,7 +21,8 @@
            android:layout_width="match_parent"
            android:layout_height="10dp"
            android:layout_weight="1.0"
-           android:scaleType="center"
+           android:scaleType="fitXY"
+
            android:contentDescription="TODO" />
        <TextView
            android:layout_width="match_parent"

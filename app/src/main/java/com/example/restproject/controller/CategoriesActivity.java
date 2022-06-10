@@ -17,10 +17,10 @@ public class CategoriesActivity extends AppCompatActivity {
        // Intent intent = getIntent();
     }
 
-//    public void onClickSaladsBtn(View view){
-//        Intent intent = new Intent(this, SaladsActivity.class);
-//        startActivity(intent);
-//    }
+    public void onClickSaladsBtn(View view){
+        Intent intent = new Intent(this, SaladsActivity.class);
+        startActivity(intent);
+    }
 //    public void onClickHotDrinksBtn(View view){
 //        Intent intent = new Intent(this, HotDrinksActivity.class);
 //        startActivity(intent);
@@ -33,9 +33,9 @@ public class CategoriesActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, MealsActivity.class);
 //        startActivity(intent);
 //    }
-//    public void onClickDessertBtn(View view){
-//        Intent intent = new Intent(this, DessertActivity.class);
-//        startActivity(intent);
-//    }
+    public void onClickDessertBtn(View view){
+        Intent intent = new Intent(this, DessertActivity.class);
+        startActivity(intent);
+    }
 
 }

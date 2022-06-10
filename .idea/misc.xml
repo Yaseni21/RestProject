@@ -12,13 +12,26 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/RestProject/app/src/main/res/layout/activity_employee_register.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/RestProject/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/RestProject/app/src/main/res/layout/layout.xml" value="0.1" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/RestProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/RestProject/app/src/main/res/layout/activity_navigation.xml" value="0.24895833333333334" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/RestProject/app/src/main/res/layout/fragment_about_us.xml" value="0.2359375" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/RestProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable-v24/background_btn.xml" value="0.1355" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1355" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable-v24/ic_main_meal.xml" value="0.10400000000000001" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable-v24/ic_of_account_.xml" value="0.1355" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable-v24/ic_of_attach_money_.xml" value="0.1045" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable-v24/ic_of_date_.xml" value="0.1355" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable-v24/ic_of_lock_.xml" value="0.1045" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable-v24/ic_of_phone_.xml" value="0.1355" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable/buttons.xml" value="0.137" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1355" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/layout/about.xml" value="0.21467391304347827" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/layout/activity_categories.xml" value="0.35701598579040855" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/layout/activity_main.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/layout/activity_salads.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/layout/card_image.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/RestProject/app/src/main/res/layout/categories.xml" value="0.16367521367521368" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
