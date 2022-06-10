@@ -14,4 +14,9 @@
     <color name="colorAccent">#6B4F4F</color>
     <color name="colorDivider">#EED6C4</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="orange">#FF8C00</color>
+    <color name="colorOrange">#FF5722</color>
+
+
+>>>>>>> 857a5e9 (commit)
 </resources>

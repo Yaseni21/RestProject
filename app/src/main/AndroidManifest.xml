@@ -25,14 +25,25 @@
 
         <activity
             android:name=".controller.SignUpActivity"
-            android:exported="false">
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".controller.ColdDrinksActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".controller.aboutActivity"
+            android:exported="true">
+        </activity>
 
+        <activity
+            android:name=".controller.CategoriesActivity"
+            android:exported="true">
         </activity>
 
         <activity
             android:name=".controller.EmployeeRegisterActivity"
-            android:exported="false">
-
+            android:exported="true">
         </activity>
     </application>
 
