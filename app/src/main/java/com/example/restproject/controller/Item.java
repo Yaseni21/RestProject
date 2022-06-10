@@ -15,12 +15,26 @@ public class Item {
             new Item("Fanta" , 3 , "Cold Drinks" , R.drawable.fanta)
     };
 
+
+    public static final Item[] MainMeals = {
+            new Item("Pizza" , 3 , "MainMeals " , R.drawable.pizza),
+            new Item("Burger" , 3 , "MainMeals" , R.drawable.burger),
+                    new Item("Spaghetti" , 3 , "MainMeals" , R.drawable.spaghiti),
+                    new Item("Fettuccine " , 3 , "MainMeals" , R.drawable.fuchini),
+                    new Item("Cheese sandwich " , 3 , "MainMeals" , R.drawable.chees),
+                    new Item("Vegetable sandwich " , 3 , "MainMeals" , R.drawable.vegeta),
+                    new Item("Shrimp with rice " , 3 , "MainMeals" , R.drawable.shrimp)
+    };
+
     public Item(String itemName, int itemPrice, String itemCategory, int itemImage) {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemCategory = itemCategory;
         this.itemImage = itemImage;
     }
+
+
+
 
     public String getItemName() {
         return itemName;
