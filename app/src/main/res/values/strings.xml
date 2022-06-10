@@ -21,13 +21,7 @@
     <string name="home_page">Home Page</string>
     <string name="rooms">Rooms</string>
     <string name="about_us">About Us</string>
-    <string name="about_usImage">About Us Image</string>
     <string name="contact_us">Contact Us</string>
-
-    <string name="about_usText1">About Us </string>
-    <string name="about_usText2">We are in a chain of restaurants EAT24, which specializes in the finest types of food and dessert. All you have to do is visit us with the most luxurious services or order it to your home and the fastest delivery.</string>
-
-
     <string name="log_out">Log out</string>
     <string name="go_to_home_page">Go directly to the app</string>
     <string name="username">Username</string>
@@ -41,9 +35,6 @@
             Location
         </br>
     </string>
-    <string name="salads">Salads</string>
-    <string name="mainMeals">Main Meals</string>
-    <string name="coldDrinks">Cold Drinks</string>
-    <string name="hotDrinks">Hot Drinks</string>
-    <string name="desserts">"Desserts "</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

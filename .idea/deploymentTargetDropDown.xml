@@ -7,27 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <value value="C:\Users\Lenovo\.android\avd\Pixel_5_API_30_1.avd" />
-=======
-            <value value="C:\Users\Admin\.android\avd\Pixel_4_API_30.avd" />
->>>>>>> origin/master
-=======
-            <value value="C:\Users\Admin\.android\avd\Pixel_4_API_30.avd" />
->>>>>>> 857a5e9 (commit)
+            <value value="C:\Users\DELL\.android\avd\Pixel_3a_API_28.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <timeTargetWasSelectedWithDropDown value="2022-06-10T09:15:58.367247300Z" />
-=======
-    <timeTargetWasSelectedWithDropDown value="2022-06-09T13:30:17.572344300Z" />
->>>>>>> origin/master
-=======
-    <timeTargetWasSelectedWithDropDown value="2022-06-09T13:30:17.572344300Z" />
->>>>>>> 857a5e9 (commit)
+    <timeTargetWasSelectedWithDropDown value="2022-06-10T09:05:34.850033500Z" />
   </component>
 </project>
