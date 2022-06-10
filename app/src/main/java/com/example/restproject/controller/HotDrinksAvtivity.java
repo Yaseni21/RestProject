@@ -1,16 +1,14 @@
 package com.example.restproject.controller;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.restproject.R;
 
-public class ColdDrinksActivity extends AppCompatActivity {
+public class HotDrinksAvtivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,17 +16,17 @@ public class ColdDrinksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_activity);
         RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
-       // Item it = new Item();
-        String[] names = new String[Item.coldDrinks.length];
-        int[] prices = new int[Item.coldDrinks.length];
-        int[] ids = new int[Item.coldDrinks.length];
+        // Item it = new Item();
+        String[] names = new String[Item.hotDrinks.length];
+        int[] prices = new int[Item.hotDrinks.length];
+        int[] ids = new int[Item.hotDrinks.length];
 
 
 
         for (int i = 0 ; i < names.length ; i++){
-           names[i] = Item.coldDrinks[i].getItemName();
-            prices[i] = Item.coldDrinks[i].getItemPrice();
-            ids[i] = Item.coldDrinks[i].getItemImage();
+            names[i] = Item.hotDrinks[i].getItemName();
+            prices[i] = Item.hotDrinks[i].getItemPrice();
+            ids[i] = Item.hotDrinks[i].getItemImage();
 
 
         }

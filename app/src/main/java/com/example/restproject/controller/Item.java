@@ -15,6 +15,13 @@ public class Item {
             new Item("Fanta" , 3 , "Cold Drinks" , R.drawable.fanta)
     };
 
+    public static final Item[] hotDrinks = {
+            new Item("Coffee" , 3 , "Hot Drinks" , R.drawable.coffee),
+            new Item("Tea" , 3 , "Hot Drinks" , R.drawable.tea),
+            new Item("Lattee" , 3 , "Hot Drinks" , R.drawable.latte),
+            new Item("Espresso" , 3 , "Hot Drinks" , R.drawable.espresso)
+    };
+
     public Item(String itemName, int itemPrice, String itemCategory, int itemImage) {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
