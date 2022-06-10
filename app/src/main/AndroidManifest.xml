@@ -32,10 +32,17 @@
             android:name=".controller.EmployeeRegisterActivity"
             android:exported="false">
         </activity>
+
+        <activity
+            android:name=".controller.CategoriesActivity"
+            android:exported="false">
+        </activity>
+
         <activity
             android:name=".controller.ColdDrinksActivity"
             android:exported="false">
         </activity>
+
     </application>
 
 </manifest>

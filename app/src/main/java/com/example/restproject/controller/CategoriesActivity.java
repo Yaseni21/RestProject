@@ -13,7 +13,7 @@ public class CategoriesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_categories);
+        setContentView(R.layout.categories);
        // Intent intent = getIntent();
     }
 
@@ -25,10 +25,10 @@ public class CategoriesActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, HotDrinksActivity.class);
 //        startActivity(intent);
 //    }
-//    public void onClickColdDrinksBtn(View view){
-//        Intent intent = new Intent(this, ColdDrinksActivity.class);
-//        startActivity(intent);
-//    }
+    public void onClickColdDrinksBtn(View view){
+        Intent intent = new Intent(this, ColdDrinksActivity.class);
+        startActivity(intent);
+    }
 //    public void onClickMealsBtn(View view){
 //        Intent intent = new Intent(this, MealsActivity.class);
 //        startActivity(intent);
