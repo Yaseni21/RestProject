@@ -17,16 +17,16 @@ public class SaladsActivity extends AppCompatActivity {
 
         RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
         // Item it = new Item();
-        String[] names = new String[Item.salads.length];
-        int[] prices = new int[Item.salads.length];
-        int[] ids = new int[Item.salads.length];
+        String[] names = new String[Item.Salads.length];
+        int[] prices = new int[Item.Salads.length];
+        int[] ids = new int[Item.Salads.length];
 
 
 
         for (int i = 0 ; i < names.length ; i++){
-            names[i] = Item.salads[i].getItemName();
-            prices[i] = Item.salads[i].getItemPrice();
-            ids[i] = Item.salads[i].getItemImage();
+            names[i] = Item.Salads[i].getItemName();
+            prices[i] = Item.Salads[i].getItemPrice();
+            ids[i] = Item.Salads[i].getItemImage();
 
 
         }
