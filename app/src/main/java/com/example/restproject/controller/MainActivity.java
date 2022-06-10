@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(intent);
 //    }
 
-    public void onClickSignInBtn(View view) {
-        Intent intent = new Intent(this, CategoriesActivity.class);
-//        intent.putExtra("msg", customers);
-        startActivity(intent);
-    }
+//    public void onClickSignInBtn(View view) {
+//        Intent intent = new Intent(this, CategoriesActivity.class);
+////        intent.putExtra("msg", customers);
+//        startActivity(intent);
+//    }
 
     public void createNewClick2(View view) {
         Intent intent = new Intent(this, SignUpActivity.class);
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-       Intent intent = new Intent(this , ColdDrinksActivity.class);
+       Intent intent = new Intent(this , CategoriesActivity.class);
        startActivity(intent);
     }
 }
