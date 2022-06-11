@@ -21,18 +21,18 @@ public class CategoriesActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SaladsActivity.class);
         startActivity(intent);
     }
-//    public void onClickHotDrinksBtn(View view){
-//        Intent intent = new Intent(this, HotDrinksActivity.class);
-//        startActivity(intent);
-//    }
+    public void onClickHotDrinksBtn(View view){
+        Intent intent = new Intent(this, HotDrinksAvtivity.class);
+        startActivity(intent);
+    }
     public void onClickColdDrinksBtn(View view){
         Intent intent = new Intent(this, ColdDrinksActivity.class);
         startActivity(intent);
     }
-//    public void onClickMealsBtn(View view){
-//        Intent intent = new Intent(this, MealsActivity.class);
-//        startActivity(intent);
-//    }
+    public void onClickMealBtn(View view){
+        Intent intent = new Intent(this, MainMealsActivity.class);
+        startActivity(intent);
+    }
     public void onClickDessertBtn(View view){
         Intent intent = new Intent(this, DessertActivity.class);
         startActivity(intent);

@@ -26,6 +26,30 @@ public class Item {
                     new Item("Shrimp with rice " , 3 , "MainMeals" , R.drawable.shrimp)
     };
 
+    public static final Item[] hotDrinks = {
+            new Item("Coffee", 3, "Hot Drinks", R.drawable.coffee),
+            new Item("Tea", 3, "Hot Drinks", R.drawable.tea),
+            new Item("Lattee", 3, "Hot Drinks", R.drawable.latte),
+            new Item("Espresso", 3, "Hot Drinks", R.drawable.espresso)
+    };
+
+    public static final Item[] Desseerts = {
+            new Item("Macron" , 3 , "Desserts" , R.drawable.macrons),
+            new Item("Cookies" , 3 , "Desserts" , R.drawable.cookies),
+            new Item("Cheese cake" , 3 , "Desserts" , R.drawable.cheesecake),
+            new Item("Chocolate cake" , 3 , "Desserts" , R.drawable.chocolatecake),
+            new Item("Brownies" , 3 , "Desserts" , R.drawable.brownies)
+    };
+
+    public static final Item[] Salads = {
+            new Item("Caeser Salad" , 3 , "Salads" , R.drawable.caesar_salad),
+            new Item("Tabbouleh" , 3 , "Salads" , R.drawable.tabbouleh),
+            new Item("Green Salad" , 3 , "Salads" , R.drawable.green_salad),
+            new Item("Pasta Salad" , 3 , "Salads" , R.drawable.pasta_salad)
+    };
+
+
+
     public Item(String itemName, int itemPrice, String itemCategory, int itemImage) {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
