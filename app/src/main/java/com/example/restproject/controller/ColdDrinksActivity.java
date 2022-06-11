@@ -2,37 +2,90 @@ package com.example.restproject.controller;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.restproject.R;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ColdDrinksActivity extends AppCompatActivity {
+    private static  final String BASE_URL = "http://192.168.1.93:80/rest/item.php?cat=Cold%20Drinks";
+    private List<Item> items = new ArrayList<>();
+    private RecyclerView recycler;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_activity);
-        RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
-        String[] names = new String[Item.coldDrinks.length];
-        int[] prices = new int[Item.coldDrinks.length];
-        int[] ids = new int[Item.coldDrinks.length];
+        recycler =  findViewById(R.id.recycler);
 
-
-
-        for (int i = 0 ; i < names.length ; i++){
-           names[i] = Item.coldDrinks[i].getItemName();
-            prices[i] = Item.coldDrinks[i].getItemPrice();
-            ids[i] = Item.coldDrinks[i].getItemImage();
-
-
-        }
         recycler.setLayoutManager(new GridLayoutManager(this , 2));
-        recycler.setLayoutManager(new GridLayoutManager(this,2));
-        CaptionImageAdapter adapter = new CaptionImageAdapter(names , prices , ids);
-        recycler.setAdapter(adapter);
+        loadItems();
+    }
+    private void loadItems() {
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        try {
+
+                            JSONArray array = new JSONArray(response);
+                            for (int i = 0; i<array.length(); i++){
+
+                                JSONObject object = array.getJSONObject(i);
+
+                                String name = object.getString("i_name");
+                                String image = object.getString("i_image");
+                                String itemPrice = object.getString("i_price");
+                                String itemCategory = object.getString("i_category");
+
+
+
+
+                                Item item = new Item(name,itemPrice, itemCategory, image);
+                                Toast.makeText(ColdDrinksActivity.this, item.toString(),Toast.LENGTH_LONG).show();
+                                System.out.println(item);
+                                items.add(item);
+                            }
+
+                        }catch (Exception e){
+
+                        }
+
+                        CaptionImageAdapter adapter = new CaptionImageAdapter(ColdDrinksActivity.this,
+                                items);
+                        recycler.setAdapter(adapter);
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+                System.out.println(error.toString());
+                Toast.makeText(ColdDrinksActivity.this, error.toString(),Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+        Volley.newRequestQueue(ColdDrinksActivity.this).add(stringRequest);
+
     }
 }
