@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RestProject</string>
+    <string name="app_name">Resturent</string>
     <string name="welcome">Welcome to our Resturent</string>
     <string name="please_sign_in_to_continue">Please sign up to continue</string>
     <string name="email">Email</string>

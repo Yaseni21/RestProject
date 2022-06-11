@@ -18,7 +18,7 @@
 
        <ImageView
            android:id="@+id/image"
-           android:layout_width="match_parent"
+           android:layout_width="wrap_content"
            android:layout_height="10dp"
            android:layout_weight="1.0"
            android:scaleType="fitXY"
@@ -30,6 +30,7 @@
            android:id="@+id/txtName"
            android:layout_marginTop="2dp"
            android:layout_marginBottom="2dp"
+           style="@style/ItemsTxt"
            />
        <TextView
            android:layout_width="match_parent"
@@ -37,6 +38,7 @@
            android:id="@+id/txtPrice"
            android:layout_marginTop="2dp"
            android:layout_marginBottom="2dp"
+           style="@style/ItemsTxt"
            />
 
 

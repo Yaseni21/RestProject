@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.restproject.R;
-
 public class ColdDrinksActivity extends AppCompatActivity {
 
     @Override
@@ -31,6 +30,7 @@ public class ColdDrinksActivity extends AppCompatActivity {
 
 
         }
+        recycler.setLayoutManager(new GridLayoutManager(this , 2));
         recycler.setLayoutManager(new GridLayoutManager(this,2));
         CaptionImageAdapter adapter = new CaptionImageAdapter(names , prices , ids);
         recycler.setAdapter(adapter);
