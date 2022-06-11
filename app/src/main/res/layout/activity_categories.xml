@@ -69,24 +69,23 @@
         android:text="@string/mainMeals"
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="370dp"
-        tools:ignore="MissingConstraints"
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_meal"
         android:textSize="24dp"
         android:onClick="onClickMealBtn"
-        />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/desserts"
         android:layout_width="300dp"
         android:layout_height="65dp"
         android:text="@string/desserts"
+        android:onClick="onClickDessertBtn"
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="440dp"
-        tools:ignore="MissingConstraints"
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_dessert"
         android:textSize="24dp"
-        />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

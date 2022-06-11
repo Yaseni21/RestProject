@@ -30,6 +30,7 @@
            android:id="@+id/txtName"
            android:layout_marginTop="2dp"
            android:layout_marginBottom="2dp"
+           style="@style/ItemsTxt"
            />
        <TextView
            android:layout_width="match_parent"
@@ -37,6 +38,7 @@
            android:id="@+id/txtPrice"
            android:layout_marginTop="2dp"
            android:layout_marginBottom="2dp"
+           style="@style/ItemsTxt"
            />
 
 

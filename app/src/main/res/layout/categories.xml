@@ -28,7 +28,7 @@
         android:drawableLeft="@drawable/ic_salad"
         android:textSize="24dp"
         android:layout_margin="18dp"
-        android:onClick="onClicksaladsBtn"
+        android:onClick="onClickSaladsBtn"
         />
 
     <Button
@@ -79,6 +79,7 @@
         android:drawableLeft="@drawable/ic_dessert"
         android:textSize="24dp"
         android:layout_margin="18dp"
+        android:onClick="onClickDessertBtn"
         />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

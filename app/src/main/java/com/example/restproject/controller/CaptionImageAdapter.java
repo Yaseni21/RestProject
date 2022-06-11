@@ -45,7 +45,7 @@ public class CaptionImageAdapter
         txt.setText(names[position]);
 
         TextView txt1 = (TextView)cardView.findViewById(R.id.txtPrice);
-        txt1.setText(prices[position] + "");
+        txt1.setText("price: " + prices[position]);
 
     }
 

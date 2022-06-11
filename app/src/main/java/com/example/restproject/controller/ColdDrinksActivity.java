@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.restproject.R;
-
 public class ColdDrinksActivity extends AppCompatActivity {
 
     @Override
@@ -18,7 +17,6 @@ public class ColdDrinksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_activity);
         RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
-       // Item it = new Item();
         String[] names = new String[Item.coldDrinks.length];
         int[] prices = new int[Item.coldDrinks.length];
         int[] ids = new int[Item.coldDrinks.length];
@@ -33,6 +31,7 @@ public class ColdDrinksActivity extends AppCompatActivity {
 
         }
         recycler.setLayoutManager(new GridLayoutManager(this , 2));
+        recycler.setLayoutManager(new GridLayoutManager(this,2));
         CaptionImageAdapter adapter = new CaptionImageAdapter(names , prices , ids);
         recycler.setAdapter(adapter);
     }
