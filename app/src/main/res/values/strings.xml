@@ -1,10 +1,14 @@
 <resources>
-    <string name="app_name">RestProject</string>
+    <string name="app_name">Resturent</string>
     <string name="welcome">Welcome to our Resturent</string>
     <string name="please_sign_in_to_continue">Please sign up to continue</string>
     <string name="email">Email</string>
     <string name="password_hint">********</string>
     <string name="password">Password</string>
+    <string name="hotDrinks">hotDrinks</string>
+    <string name="salads">salads</string>
+    <string name="coldDrinks">cold Drinks</string>
+
     <string name="forgot_password">Forgot password?</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="create_new_account">Create new account</string>
@@ -17,7 +21,11 @@
     <string name="sign_in">Sign in</string>
     <string name="visa_number">**** **** ****</string>
     <string name="visa">Visa card</string>
+    <string name="mainMeals">Main Meals</string>
+    <string name="desserts">Desserts</string>
+
     <string name="date_of_birth">DOB</string>
+
     <string name="home_page">Home Page</string>
     <string name="rooms">Rooms</string>
     <string name="about_us">About Us</string>
@@ -29,6 +37,8 @@
     <string name="areYouAnEmp">Are you an employee?</string>
     <string name="yes">Yes</string>
     <string name="log_in">Log in</string>
+
+    <string name="about_usText2">we are in a chain of restaurants EAT24, which specializes in the finest type of food and desesert. All you have to do is visit us with the most luxurious services or order it to your home and the fastest deliverv.</string>
     <string name="create_employee_account">Create Employee Account</string>
     <string name="location">
         <br>

@@ -1,6 +1,7 @@
 package com.example.restproject.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,10 +13,11 @@ public class MainMealsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_activity);
+
         RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
+        // Item it = new Item();
         String[] names = new String[Item.MainMeals.length];
         int[] prices = new int[Item.MainMeals.length];
         int[] ids = new int[Item.MainMeals.length];
@@ -29,7 +31,7 @@ public class MainMealsActivity extends AppCompatActivity {
 
 
         }
-        recycler.setLayoutManager(new LinearLayoutManager(this));
+        recycler.setLayoutManager(new GridLayoutManager(this,2));
         CaptionImageAdapter adapter = new CaptionImageAdapter(names , prices , ids);
         recycler.setAdapter(adapter);
     }
