@@ -1,11 +1,13 @@
 package com.example.restproject.controller;
 
+import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.example.restproject.R;
 
 public class CategoriesActivity extends AppCompatActivity {
@@ -19,6 +21,7 @@ public class CategoriesActivity extends AppCompatActivity {
 
     public void onClickSaladsBtn(View view){
         Intent intent = new Intent(this, SaladsActivity.class);
+
         startActivity(intent);
     }
     public void onClickHotDrinksBtn(View view){

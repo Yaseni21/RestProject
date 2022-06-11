@@ -1,5 +1,6 @@
 package com.example.restproject.controller;
 
+import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,65 +8,67 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
+import com.bumptech.glide.Glide;
+import com.example.restproject.R;
+import com.example.restproject.controller.Item;
+
+import java.util.List;
+
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.restproject.R;
+import org.w3c.dom.Text;
 
 public class CaptionImageAdapter
-        extends RecyclerView.Adapter<CaptionImageAdapter.ViewHolder> {
-    private String[] names;
-    private int[] prices;
-    private int[] ids;
+        extends RecyclerView.Adapter<CaptionImageAdapter.ViewHolder>{
+    private Context context;
+    private List<Item> items;
 
-    public CaptionImageAdapter(String[] names, int[] prices, int[] ids) {
-        this.names = names;
-        this.prices = prices;
-        this.ids = ids;
+
+    public CaptionImageAdapter(Context context, List<Item> items){
+        this.context = context;
+        this.items = items;
     }
-
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) { // build Card view as object
-        CardView v = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.card_image,parent,false);
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        CardView v = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.card_image,
+                parent,
+                false);
 
         return new ViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        final Item item = items.get(position);
         CardView cardView = holder.cardView;
         ImageView imageView = (ImageView) cardView.findViewById(R.id.image);
-        Drawable dr = ContextCompat.getDrawable(cardView.getContext() , ids[position]);
-
-        imageView.setImageDrawable(dr);
-
+        Glide.with(context).load(item.getItemImage()).into(imageView);
         TextView txt = (TextView)cardView.findViewById(R.id.txtName);
-        txt.setText(names[position]);
-
-        TextView txt1 = (TextView)cardView.findViewById(R.id.txtPrice);
-        txt1.setText("price: " + prices[position]);
-
+        txt.setText(item.getItemName());
+        TextView txt1 = (TextView)cardView.findViewById(R.id.txtPrice) ;
+        txt1.setText(item.getItemPrice());
+        cardView.setOnClickListener( new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //
+            }
+        });
     }
-
-
-
-
-
 
     @Override
     public int getItemCount() {
-        return names.length;
+        return items.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
-            private CardView cardView;
-        public ViewHolder(@NonNull CardView cardView) {
+        private CardView cardView;
+        public ViewHolder(CardView cardView){
             super(cardView);
             this.cardView = cardView;
         }
+
     }
-
-
 }
+
