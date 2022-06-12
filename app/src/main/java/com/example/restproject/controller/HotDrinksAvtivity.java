@@ -10,28 +10,28 @@ import com.example.restproject.R;
 
 public class HotDrinksAvtivity extends AppCompatActivity {
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
 
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.menu_activity);
-//        RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
-//        // Item it = new Item();
-//        String[] names = new String[Item.hotDrinks.length];
-//        int[] prices = new int[Item.hotDrinks.length];
-//        int[] ids = new int[Item.hotDrinks.length];
-//
-//
-//
-//        for (int i = 0 ; i < names.length ; i++){
-//            names[i] = Item.hotDrinks[i].getItemName();
-//            prices[i] = Item.hotDrinks[i].getItemPrice();
-//            ids[i] = Item.hotDrinks[i].getItemImage();
-//
-//
-//        }
-//        recycler.setLayoutManager(new GridLayoutManager(this , 2));
-//        CaptionImageAdapter adapter = new CaptionImageAdapter(names , prices , ids);
-//        recycler.setAdapter(adapter);
-//    }
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.menu_activity);
+        RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
+        // Item it = new Item();
+        String[] names = new String[Item.hotDrinks.length];
+        int[] prices = new int[Item.hotDrinks.length];
+        int[] ids = new int[Item.hotDrinks.length];
+
+
+
+        for (int i = 0 ; i < names.length ; i++){
+            names[i] = Item.hotDrinks[i].getItemName();
+            prices[i] = Item.hotDrinks[i].getItemPrice();
+            ids[i] = Item.hotDrinks[i].getItemImage();
+
+
+        }
+        recycler.setLayoutManager(new GridLayoutManager(this , 2));
+        CaptionImageAdapter1 adapter = new CaptionImageAdapter1(names , ids , prices);
+        recycler.setAdapter(adapter);
+    }
 }

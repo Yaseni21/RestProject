@@ -1,6 +1,5 @@
 package com.example.restproject.controller;
 
-import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,27 +7,22 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.example.restproject.R;
-import com.example.restproject.controller.Item;
-
-import java.util.List;
-
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
+import com.example.restproject.R;
 
-public class CaptionImageAdapter
-        extends RecyclerView.Adapter<CaptionImageAdapter.ViewHolder>{
-    private Context context;
-    private List<DBItem> items;
+public class CaptionImageAdapter1 extends RecyclerView.Adapter<CaptionImageAdapter1.ViewHolder>{
 
+    private String[] captions;
+    private int[] prices;
+    private int[] imageIds;
 
-    public CaptionImageAdapter(Context context, List<DBItem> items){
-        this.context = context;
-        this.items = items;
+    public CaptionImageAdapter1(String[] captions, int[] imageIds , int[] prices){
+        this.prices = prices;
+        this.captions = captions;
+        this.imageIds = imageIds;
     }
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -36,21 +30,19 @@ public class CaptionImageAdapter
                 parent,
                 false);
 
-
-
         return new ViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        final DBItem item = items.get(position);
         CardView cardView = holder.cardView;
 //        ImageView imageView = (ImageView) cardView.findViewById(R.id.image);
-//        Glide.with(context).load(item.getItemImage()).into(imageView);
+//        Drawable dr = ContextCompat.getDrawable(cardView.getContext(), imageIds[position]);
+//        imageView.setImageDrawable(dr);
         TextView txt = (TextView)cardView.findViewById(R.id.txtName);
-        txt.setText(item.getItemName());
-        TextView txt1 = (TextView)cardView.findViewById(R.id.txtPrice) ;
-        txt1.setText(item.getItemPrice());
+        txt.setText(captions[position]);
+        TextView txt1 = (TextView)cardView.findViewById(R.id.txtPrice);
+        txt1.setText(prices[position] + "");
         cardView.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v){
@@ -61,7 +53,7 @@ public class CaptionImageAdapter
 
     @Override
     public int getItemCount() {
-        return items.size();
+        return captions.length;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
@@ -73,4 +65,3 @@ public class CaptionImageAdapter
 
     }
 }
-

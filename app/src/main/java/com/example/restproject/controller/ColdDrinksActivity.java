@@ -23,8 +23,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ColdDrinksActivity extends AppCompatActivity {
-    private static  final String BASE_URL = "http://192.168.1.93:80/rest/item.php?cat=Cold%20Drinks";
-    private List<Item> items = new ArrayList<>();
+    private static  final String BASE_URL = "http://192.168.1.93:80/rest/item.php";
+    private List<DBItem> items = new ArrayList<>();
     private RecyclerView recycler;
 
 
@@ -35,7 +35,7 @@ public class ColdDrinksActivity extends AppCompatActivity {
         setContentView(R.layout.menu_activity);
         recycler =  findViewById(R.id.recycler);
 
-        recycler.setLayoutManager(new GridLayoutManager(this , 2));
+        recycler.setLayoutManager(new LinearLayoutManager(this ));
         loadItems();
     }
     private void loadItems() {
@@ -54,13 +54,13 @@ public class ColdDrinksActivity extends AppCompatActivity {
 
                                 String name = object.getString("i_name");
                                 String image = object.getString("i_image");
-                                String itemPrice = object.getString("i_price");
+                                int itemPrice = Integer.parseInt(object.getString("i_price"));
                                 String itemCategory = object.getString("i_category");
 
 
 
 
-                                Item item = new Item(name,itemPrice, itemCategory, image);
+                                DBItem item = new DBItem(name,itemPrice, itemCategory, image);
                                 Toast.makeText(ColdDrinksActivity.this, item.toString(),Toast.LENGTH_LONG).show();
                                 System.out.println(item);
                                 items.add(item);
@@ -73,6 +73,7 @@ public class ColdDrinksActivity extends AppCompatActivity {
                         CaptionImageAdapter adapter = new CaptionImageAdapter(ColdDrinksActivity.this,
                                 items);
                         recycler.setAdapter(adapter);
+
 
                     }
                 }, new Response.ErrorListener() {
