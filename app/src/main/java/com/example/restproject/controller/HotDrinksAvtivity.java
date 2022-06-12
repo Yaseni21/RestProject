@@ -15,6 +15,7 @@ public class HotDrinksAvtivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_activity);
+
         RecyclerView recycler = (RecyclerView) findViewById(R.id.recycler);
         // Item it = new Item();
         String[] names = new String[Item.hotDrinks.length];

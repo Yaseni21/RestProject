@@ -32,43 +32,42 @@
 
         <activity
             android:name=".controller.SignUpActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
         <activity
             android:name=".controller.ColdDrinksActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
         <activity
             android:name=".controller.aboutActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
 
         <activity
             android:name=".controller.CategoriesActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
 
         <activity
             android:name=".controller.EmployeeRegisterActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
         <activity
             android:name=".controller.DessertActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
         <activity
             android:name=".controller.MainMealsActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
         <activity
             android:name=".controller.HotDrinksAvtivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
         <activity
             android:name=".controller.SaladsActivity"
-            android:exported="false">
+            android:exported="true">
         </activity>
-
 
     </application>
 

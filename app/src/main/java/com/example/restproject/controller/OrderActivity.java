@@ -11,14 +11,15 @@ import com.example.restproject.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class aboutActivity extends AppCompatActivity {
+public class OrderActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.about);
+        setContentView(R.layout.orderinfo);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.AboutUs);
+        bottomNavigationView.setSelectedItemId(R.id.MyOrder);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -32,10 +33,10 @@ public class aboutActivity extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.AboutUs:
+                        startActivity(new Intent(getApplicationContext(),aboutActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.MyOrder:
-                        startActivity(new Intent(getApplicationContext(),OrderActivity.class));
-                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;

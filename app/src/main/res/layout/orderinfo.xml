@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/imageIteam"
+        android:layout_width="282dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="183dp"
+        app:layout_constraintBottom_toTopOf="@+id/OrderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/iteamPrice"
+        style="@style/orderStyle"
+        android:layout_width="72dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="54dp"
+        android:text="price"
+        app:layout_constraintBottom_toTopOf="@+id/QuantityOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iteamName"
+        app:layout_constraintTop_toBottomOf="@+id/imageIteam" />
+
+    <Button
+        android:id="@+id/OrderButton"
+        style="@style/orderStyle"
+        android:layout_width="217dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="97dp"
+        android:onClick="OrderClick"
+        android:text="@string/OrderButtom"
+        android:textColor="#455A64"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iteamPrice" />
+
+    <EditText
+        android:id="@+id/QuantityOrder"
+        android:layout_width="103dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/OrderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIteam"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/iteamName"
+        style="@style/orderStyle"
+        android:layout_width="120dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="175dp"
+        android:text="name"
+        app:layout_constraintBottom_toTopOf="@+id/OrderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageIteam"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/orderStyle"
+        android:layout_width="192dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/labelOrder"
+        app:layout_constraintEnd_toStartOf="@+id/QuantityOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iteamName"
+        tools:text="@string/labelOrder" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

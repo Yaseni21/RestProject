@@ -36,11 +36,11 @@ public class CaptionImageAdapter1 extends RecyclerView.Adapter<CaptionImageAdapt
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         CardView cardView = holder.cardView;
-//        ImageView imageView = (ImageView) cardView.findViewById(R.id.image);
-//        Drawable dr = ContextCompat.getDrawable(cardView.getContext(), imageIds[position]);
-//        imageView.setImageDrawable(dr);
+        ImageView imageView = (ImageView) cardView.findViewById(R.id.image);
+        Drawable dr = ContextCompat.getDrawable(cardView.getContext(), imageIds[position]);
+        imageView.setImageDrawable(dr);
         TextView txt = (TextView)cardView.findViewById(R.id.txtName);
-        txt.setText(captions[position]);
+        txt.setText(captions[position] + "");
         TextView txt1 = (TextView)cardView.findViewById(R.id.txtPrice);
         txt1.setText(prices[position] + "");
         cardView.setOnClickListener( new View.OnClickListener(){
