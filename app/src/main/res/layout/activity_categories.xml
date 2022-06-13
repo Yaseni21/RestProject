@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="@+id/hotDrinks"
         app:layout_constraintStart_toStartOf="@+id/hotDrinks"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="MissingConstraints" />
+         />
 
     <Button
         android:id="@+id/hotDrinks"
@@ -64,7 +64,7 @@
         android:layout_marginBottom="5dp"
         android:background="@drawable/buttons"
         android:drawableLeft="@drawable/ic_cold_drinks"
-        android:onClick="onClickHotDrinksBtn"
+        android:onClick="onClickColdDrinksBtn"
         android:text="@string/coldDrinks"
         android:textSize="24dp"
         app:layout_constraintBottom_toTopOf="@+id/mainMeals"

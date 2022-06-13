@@ -2,8 +2,10 @@ package com.example.restproject.controller;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -15,6 +17,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.restproject.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -23,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ColdDrinksActivity extends AppCompatActivity {
-    private static  final String BASE_URL = "http://192.168.1.93:80/rest/item.php";
+    private static  final String BASE_URL = "http://10.0.2.2:80/rest/item.php?cat=Cold%20Drinks";
     private List<DBItem> items = new ArrayList<>();
     private RecyclerView recycler;
 
@@ -35,8 +39,33 @@ public class ColdDrinksActivity extends AppCompatActivity {
         setContentView(R.layout.menu_activity);
         recycler =  findViewById(R.id.recycler);
 
-        recycler.setLayoutManager(new LinearLayoutManager(this ));
+        recycler.setLayoutManager(new GridLayoutManager(this , 2 ));
         loadItems();
+//        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+//        bottomNavigationView.setSelectedItemId(R.id.Home);
+//        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                switch (item.getItemId()){
+//                    case R.id.Home:
+//                        return true;
+//                    case R.id.LogOut:
+//                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+//                    case R.id.AboutUs:
+//                        startActivity(new Intent(getApplicationContext(),aboutActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+//                    case R.id.MyOrder:
+//                        startActivity(new Intent(getApplicationContext(),OrderActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+//                }
+//                return false;
+//            }
+//        });
+
     }
     private void loadItems() {
 

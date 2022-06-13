@@ -3,6 +3,7 @@ package com.example.restproject.controller;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,12 +47,12 @@ public class CaptionImageAdapter
     public void onBindViewHolder(ViewHolder holder, int position) {
         final DBItem item = items.get(position);
         CardView cardView = holder.cardView;
-//        ImageView imageView = (ImageView) cardView.findViewById(R.id.image);
-//        Glide.with(context).load(item.getItemImage()).into(imageView);
+        ImageView imageView = (ImageView) cardView.findViewById(R.id.image);
+        Glide.with(context).load(item.getItemImage()).into(imageView);
         TextView txt = (TextView)cardView.findViewById(R.id.txtName);
         txt.setText(item.getItemName());
         TextView txt1 = (TextView)cardView.findViewById(R.id.txtPrice) ;
-        txt1.setText(item.getItemPrice());
+        txt1.setText(item.getItemPrice() + "");
         cardView.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v){
