@@ -60,7 +60,7 @@ public class DessertActivity extends AppCompatActivity {
 
 
                                 DBItem item = new DBItem(name,itemPrice, itemCategory, image);
-                                Toast.makeText(DessertActivity.this, item.toString(),Toast.LENGTH_LONG).show();
+                               // Toast.makeText(DessertActivity.this, item.toString(),Toast.LENGTH_LONG).show();
                                 System.out.println(item);
                                 items.add(item);
                             }

@@ -60,7 +60,7 @@ public class HotDrinksAvtivity extends AppCompatActivity {
 
 
                                 DBItem item = new DBItem(name,itemPrice, itemCategory, image);
-                                Toast.makeText(HotDrinksAvtivity.this, item.toString(),Toast.LENGTH_LONG).show();
+                             //   Toast.makeText(HotDrinksAvtivity.this, item.toString(),Toast.LENGTH_LONG).show();
                                 System.out.println(item);
                                 items.add(item);
                             }

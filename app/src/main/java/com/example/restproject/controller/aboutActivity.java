@@ -34,7 +34,7 @@ public class aboutActivity extends AppCompatActivity {
                     case R.id.AboutUs:
                         return true;
                     case R.id.MyOrder:
-                        startActivity(new Intent(getApplicationContext(),OrderActivity.class));
+                        startActivity(new Intent(getApplicationContext(),OrderListActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
+    <ImageView
         android:id="@+id/imageIteam"
         android:layout_width="282dp"
         android:layout_height="212dp"

@@ -41,31 +41,6 @@ public class ColdDrinksActivity extends AppCompatActivity {
 
         recycler.setLayoutManager(new GridLayoutManager(this , 2 ));
         loadItems();
-//        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-//        bottomNavigationView.setSelectedItemId(R.id.Home);
-//        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                switch (item.getItemId()){
-//                    case R.id.Home:
-//                        return true;
-//                    case R.id.LogOut:
-//                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                    case R.id.AboutUs:
-//                        startActivity(new Intent(getApplicationContext(),aboutActivity.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                    case R.id.MyOrder:
-//                        startActivity(new Intent(getApplicationContext(),OrderActivity.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                }
-//                return false;
-//            }
-//        });
-
     }
     private void loadItems() {
 
@@ -90,7 +65,7 @@ public class ColdDrinksActivity extends AppCompatActivity {
 
 
                                 DBItem item = new DBItem(name,itemPrice, itemCategory, image);
-                                Toast.makeText(ColdDrinksActivity.this, item.toString(),Toast.LENGTH_LONG).show();
+                               // Toast.makeText(ColdDrinksActivity.this, item.toString(),Toast.LENGTH_LONG).show();
                                 System.out.println(item);
                                 items.add(item);
                             }

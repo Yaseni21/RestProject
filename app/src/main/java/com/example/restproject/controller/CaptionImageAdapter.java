@@ -3,12 +3,14 @@ package com.example.restproject.controller;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.restproject.R;
@@ -26,6 +28,7 @@ public class CaptionImageAdapter
         extends RecyclerView.Adapter<CaptionImageAdapter.ViewHolder>{
     private Context context;
     private List<DBItem> items;
+    int temp;
 
 
     public CaptionImageAdapter(Context context, List<DBItem> items){
@@ -56,7 +59,13 @@ public class CaptionImageAdapter
         cardView.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v){
-
+                temp = holder.getBindingAdapterPosition();
+                Intent intent = new Intent(context, OrderActivity.class);
+                intent.putExtra("name", items.get(temp).getItemName());
+                intent.putExtra("price", items.get(temp).getItemPrice() + "");
+                intent.putExtra("image", items.get(temp).getItemImage() +"");
+                Toast.makeText(context, "youu clickeed" + items.get(temp).getItemName(), Toast.LENGTH_SHORT).show();
+                context.startActivity(intent);
             }
         });
     }

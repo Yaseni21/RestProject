@@ -68,7 +68,14 @@
             android:name=".controller.SaladsActivity"
             android:exported="true">
         </activity>
-
+        <activity
+            android:name=".controller.OrderActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".controller.OrderListActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

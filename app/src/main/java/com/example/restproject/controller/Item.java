@@ -47,6 +47,14 @@ public class Item {
                     new Item("Shrimp with rice " , 3 , "MainMeals" , R.drawable.shrimp)
     };
 
+    public static final Item[] order = {
+            new Item("Coffee", 3, "Hot Drinks", R.drawable.coffee),
+            new Item("Green Salad", 15, "Salads ", R.drawable.tea),
+            new Item("Lattee", 3, "Hot Drinks", R.drawable.latte),
+            new Item("Vegetable sandwich " , 22 , "MainMeals" , R.drawable.vegeta)
+
+    };
+
     public Item(String itemName, int itemPrice, String itemCategory, int itemImage) {
         this.itemName = itemName;
         this.itemPrice = itemPrice;
@@ -91,11 +99,8 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
+        return
                 "itemName='" + itemName + '\'' +
-                ", itemPrice=" + itemPrice +
-                ", itemCategory='" + itemCategory + '\'' +
-                ", itemImage='" + itemImage + '\'' +
-                '}';
+                ", itemPrice=" + itemPrice;
     }
 }
